@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Calistoga&family=Dancing+Script:wght@700&family=Fasthand&family=Yatra+One&family=Ysabeau&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.logo a img{
+    width: 4rem;
+}
+.title{
+    padding-top:0.5rem ;
+    padding-right:0 ;
+}
+header{
+    color: blanchedalmond;
+    background: linear-gradient(rgb(0, 0, 0), rgba(170, 123, 123, 0.2));
+    background-color: black;
+    font-family: sans-serif;
+    min-width: 100vh;
+    margin: 0;
+}
+@media(min-width:590px) {
+    header{
+        width:100%;
+        height: 100%;
+        min-width: 100vh;
+        margin: 0;
+        /* position: absolute; */
+        
+    }
+}
+.slider-image img{
+    background-size:cover;
+    
+}
+.slider-image{
+    height: 85vh;
+    min-width:100vw;
+    min-height: 86vh;
+    width:100%;
+    min-height: 100vh;
+    
+    /* z-index: -1; */
+}
+.slider-header h3{
+    display: block;
+    /* top:10px;    */
+
+}
+.nav1{
+    font-family: 'Calistoga', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.navTotal{
+    /* position: absolute; */
+    min-width:100vh;
+    width: 100%;
+    /* width: 200vh; */
+}
+.menu-btn{
+    background: transparent;
+    border: 0px;
+    top:0px;
+}
+.menu-btn img{
+    width:1.7rem;
+}
+.sidebar-menu{
+    position: absolute;
+    top:0;
+    left:-10px;
+    display: none;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    height: 100%;
+    min-height: 100vh;
+    width:20%;
+
+}
+.move-header{
+    position: relative;
+    display: none;
+    float: left;
+    width:70%;
+}
+.iconList{
+    display: flex;
+    list-style: none;  
+}
+.icon a svg{
+    width:3rem;
+}
+.wishIcon a svg{
+    display: none;
+}
+@media(min-width:750px){
+    .wishIcon a svg{
+        display: block;
+        vertical-align: bottom;
+        width:3rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+}
+.dropbtn{
+    font-family: 'Calistoga', cursive;
+    font-size: large;
+    color: rgb(172, 171, 171);
+    margin: 0.2rem;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position:relative;
+    overflow: hidden;
+}
+
+.dropbtn:hover {
+    color: whitesmoke;
+}
+
+.dropbtn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: whitesmoke;
+    height: 2px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.dropbtn:hover:before,
+.dropbtn:focus:before,
+.dropbtn:active:before {
+    left: 0;
+    right: 0;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+  background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2));
+  display: none;
+  position: absolute;
+  min-width: 8rem;
+  box-shadow: 0px 8px 16px 0px rgba(247, 246, 246, 0.2);
+  border-radius: 1rem;
+  z-index: 2;
+  
+}
+.dropdown-content a {
+  color: wheat;
+  padding: 5px 0px 5px 0px; 
+  text-decoration: none;
+  display: block;
+  list-style: none;
+}
+.dropdown-content li{
+  list-style: none;
+  font-family: 'Calistoga', cursive;
+  font-weight: 200;
+}
+.dropdown-content a:hover{
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-outer{
+    display: none;
+
+}
+@media(min-width:993px){
+    .dropdown-outer{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+.dropbtn{
+    background-color: transparent;
+    color: wheat;
+    border: 0px;
+}
+.menubtn{
+    background-color: transparent;
+    border: 0px;
+}
+.menubtn img{
+    margin: 0;
+    vertical-align: bottom;
+}
+
+
+.nav1 ul li{
+    margin: 0 0.4rem;
+}@media(min-width:750px) {
+    .nav1 ul li{
+        margin-left:0.9rem;
+    }
+}
+.iconList{
+    padding: 0;
+}
+
+.iconList a img{
+    width:1.7rem;
+    padding-top:1rem ;
+}
+
+
+
+.orderButton {
+    display: block;
+    min-width: 200px;
+    position: absolute;
+    top: 38%;
+    left: 30%;
+    text-align: center;
+}
+@media(min-width:300px){
+    .orderButton{
+        display: block;
+        max-width: 1000px;
+        position: absolute;
+        top: 60%;
+        left: 15%;
+        text-align: center;
+    }
+}
+.orderButton h2{
+    line-height: 4rem;
+    font-family: 'Fasthand', cursive;
+    font-weight: 300;
+    font-size: xx-large;
+    color: blanchedalmond;
+}
+@media(min-width:750px){
+    .orderButton h2{
+        line-height: 5rem;
+        font-family: 'Fasthand', cursive;
+        font-weight: 300;
+        font-size: xxx-large;
+        color: blanchedalmond;
+    }
+}
+
+.orderButton button{
+    font-family: 'Protest Riot', sans-serif;   
+    border-radius:0.5rem;
+    border: 0.2rem solid blanchedalmond;
+    width: 8rem;
+    height: 3rem;
+    transition: 0.3s;
+    background-color: blanchedalmond;
+    color: black;
+    font-weight: 550;
+    font-size: larger;
+    
+}
+@media(min-width:399px) {
+    .orderButton button{
+        font-family: 'Protest Riot', sans-serif;   
+        border-radius:0.5rem;
+        border: 0.2rem solid blanchedalmond;
+        width: 8rem;
+        height: 3rem;
+        transition: 0.3s;
+        background: transparent;
+        color: blanchedalmond;
+        font-weight: 550;
+        font-size: larger;
+    }
+}
+.orderButton button:hover{
+    background-color: blanchedalmond;
+    color: black
+}
+
+
+
+main{
+    background: linear-gradient(rgb(218, 150, 150), rgba(223, 208, 208, 0.2));
+    padding: 0rem;
+    background-color: rgb(206, 152, 152);
+    min-width: 100vh;
+    
+}
+main .section{
+    padding: 1.5rem;
+    height:76vh;
+    min-width: 100vh;
+    width:100%;
+}
+hr{
+    color: black;
+    border: 0.1rem solid black;
+}
+.main_head{
+    font-family: 'Calistoga', cursive;
+    text-align: center;
+    color: rgb(34, 34, 34);
+}
+.main_head h4{
+    display: none;
+}
+@media(min-width:750px){
+    .main_head h4{
+        display: block;
+    }
+}
+.jewellery_card{
+    position: relative;
+}
+.jewellery_card ul {
+    margin:4rem 0;
+    display:flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+}
+.jewellery_card ul li {
+    list-style: none;
+    margin:4 0rem;
+    padding:0.5rem;
+    background: linear-gradient(rgb(78, 77, 77), rgba(253, 253, 253, 0.2));
+    min-width: 8rem;
+    box-shadow: 0.4rem 0.4rem 0.4rem rgba(3, 3, 3, 0.2);
+    border-radius: 1.5rem;
+    border: 0px;
+    height: 100%;
+    width: 25%;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+}
+.jewellery_card ul li:hover{
+    box-shadow: 0.4rem 0.4rem 1rem rgb(12, 12, 12);
+    color:white
+}
+.hide-on-small{
+    display: none;
+}
+@media(min-width:570px) {
+    .hide-on-small{
+        display: none
+    }
+}
+@media(min-width:750px){
+    .jewellery_card ul li{
+        height: 100%;
+        width: 25%;
+    }
+    .hide-on-small{
+        display: block;
+    }
+}
+@media(min-width:1200px){
+    .jewellery_card ul li{
+        height: 100%;
+        width: 20%;
+    }
+}
+.images img{
+    width:95%;
+    min-width:8rem;
+}
+.card span{
+    font-family: 'Calistoga', cursive;
+    padding: 10px;
+}
+
+
+
+footer{
+    font-family: 'Calistoga', cursive;
+    color: black;
+    background-color: rgb(207, 179, 179);
+    text-align: center;
+    min-width: 100vh;
+    width:100%;
+}
+.footer-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-list li a{
+    color: black;
+}
+
+
+
+
